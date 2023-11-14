@@ -33,10 +33,7 @@ export class App extends Component {
     // console.log('componentDidUpdate');
 
     if (prevState.contacts !== this.state.contacts) {
-      window.localStorage.setItem(
-        'contacts',
-        JSON.stringify(this.state.contacts)
-      );
+      window.localStorage.setItem(keyLS, JSON.stringify(this.state.contacts));
     }
   }
 
